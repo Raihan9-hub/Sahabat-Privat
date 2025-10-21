@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIMBEL SAHABAT PRIVAT</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(135deg, #e63946, #ff4d4d);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    header img.logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+    }
+
+    header h1 {
+      margin: 0.5rem 0 0;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+
+    header p {
+      margin: 0.3rem 0 1.5rem;
+      font-size: 1.1rem;
+      color: #ffeaea;
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-bottom: 5px solid #e63946;
+      border-top: 3px solid white;
+    }
+
+    /* ===== CONTAINER UMUM ===== */
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h2 {
+      color: #e63946;
+      border-left: 6px solid #e63946;
+      padding-left: .6rem;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      line-height: 1.8;
+    }
+
+    li {
+      list-style: none;
+      margin: .5rem 0;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #e63946;
+      font-weight: bold;
+    }
+
+    /* ===== TOMBOL ===== */
+    .btn-wa {
+      display: inline-block;
+      background: #e63946;
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-weight: 600;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(230,57,70,0.3);
+    }
+
+    .btn-wa:hover {
+      background: #c70025;
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(199,0,37,0.4);
+    }
+
+    /* ===== FLOATING BUTTON ===== */
+    .wa-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 100;
+      transition: 0.3s;
+    }
+
+    .wa-float:hover {
+      background-color: #128C7E;
+      transform: scale(1.1);
+    }
+
+    .wa-float i {
+      margin-top: 15px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      background: #e63946;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* ===== GARIS PEMBATAS ===== */
+    .divider {
+      height: 4px;
+      width: 80px;
+      background: #e63946;
+      margin: 10px auto 25px;
+      border-radius: 2px;
+    }
+  </style>
+
+  <!-- Ikon Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <img src="P_20251017_075349_0000.png" alt="Logo Sahabat Privat" class="logo">
+    <h1>BIMBEL SAHABAT PRIVAT</h1>
+    <p>Belajar Lebih Fokus, Nyaman, dan Tepat Sasaran 🇮🇩</p>
+  </header>
+
+  <img src="https://images.unsplash.com/photo-1600195077909-3e6c71c58512?auto=format&fit=crop&w=1200&q=80"
+       alt="Belajar bersama guru privat" class="banner">
+
+  <!-- ===== PROGRAM ===== -->
+  <section>
+    <h2><i class="fas fa-book-open"></i> Program Pembelajaran</h2>
+    <div class="divider"></div>
+    <ul>
+      <li>Les Matematika, Bahasa Inggris, dan IPA</li>
+      <li>Persiapan Ujian Sekolah & SNBT</li>
+      <li>Pembelajaran Tes Masuk PTN dan CPNS</li>
+      <li>Kelas SD, SMP, dan SMA</li>
+      <li>Kelas Privat & Kelompok</li>
+      <li>Pembelajaran Tes Masuk Sekolah Favorit</li>
+    </ul>
+  </section>
+
+  <!-- ===== KEUNGGULAN ===== -->
+  <section>
+    <h2><i class="fas fa-star"></i> Keunggulan Bimbel Sahabat Privat</h2>
+    <div class="divider"></div>
+    <ul>
+      <li>Guru datang ke rumah siswa</li>
+      <li>Jadwal fleksibel menyesuaikan siswa</li>
+      <li>Biaya terjangkau & transparan</li>
+      <li>Diajari oleh guru profesional alumni PTN (UM & UB)</li>
+      <li>Guru ramah, berpengalaman, dan komunikatif</li>
+      <li>Materi sesuai kurikulum terbaru</li>
+      <li>Tersedia kelas Online & Offline</li>
+      <li>Hasil belajar terbukti efektif & meningkat</li>
+    </ul>
+  </section>
+
+  <!-- ===== AJAKAN ===== -->
+  <section style="text-align:center;">
+    <h2><i class="fas fa-phone-volume"></i> Daftar Sekarang!</h2>
+    <div class="divider"></div>
+    <p>Hubungi kami melalui WhatsApp untuk informasi dan pendaftaran.</p>
+    <a href="https://wa.me/6282223257978" target="_blank" class="btn-wa">
+      <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+    </a>
+  </section>
+
+  <!-- ===== FLOATING WA BUTTON ===== -->
+  <a href="https://wa.me/6282223257978" target="_blank" class="wa-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Bimbel Sahabat Privat | Belajar Mudah, Nyaman, dan Terarah</p>
+  </footer>
+
+</body>
+</html>
